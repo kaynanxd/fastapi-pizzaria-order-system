@@ -33,3 +33,28 @@ Você precisará ter o Python instalado (versão 3.8+ é recomendada).
 ```bash
 git clone [https://github.com/SEU_USUARIO/fastapi-pizzaria-order-system.git](https://github.com/SEU_USUARIO/fastapi-pizzaria-order-system.git)
 cd fastapi-pizzaria-order-system
+```
+### 2. Instalar Depedencias
+
+pip install -r requirements.txt
+
+### 3. crie seu arquivo.env: 
+
+cp .env.example .env
+
+SECRET_KEY="SUA_CHAVE_SECRETA"
+ALGORITHM="HS256"
+ACCESS_TOKEN_EXPIRE_MINUTES=30
+DATABASE_URL="sqlite:///banco.db"
+
+### 4. execute a api :
+
+uvicorn main:app --reload
+
+A API estará disponível em http://127.0.0.1:8000
+
+
+📚 Documentação Interativa
+O FastAPI gera automaticamente uma documentação interativa.
+
+Swagger UI : Acesse http://127.0.0.1:8000/docs
