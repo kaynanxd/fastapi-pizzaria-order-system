@@ -47,7 +47,14 @@ ALGORITHM="HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES=30
 DATABASE_URL="sqlite:///banco.db"
 
-### 4. execute a api :
+### 4. Crie o banco de dados :
+
+# criar a migração: 
+alembic revision --autogenerate -m "migracao inicial"
+# executar a migração: 
+alembic upgrade head
+
+### 5. execute a api :
 
 uvicorn main:app --reload
 
