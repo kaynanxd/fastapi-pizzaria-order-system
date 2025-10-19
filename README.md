@@ -1,2 +1,35 @@
-# fastapi-pizzaria-order-system
-Este é um projeto de backend desenvolvido em Python utilizando o framework FastAPI para demonstrar a construção de um sistema de pedidos (CRUD) e autenticação de usuários (JWT).
+# 🍕 FastAPI Pizzaria Order System
+
+Este é um projeto de *backend* desenvolvido em **Python** utilizando o *framework* **FastAPI** para demonstrar a construção de um sistema de pedidos (CRUD) e autenticação de usuários (JWT). O sistema simula uma API para uma pizzaria, permitindo a gestão completa de pedidos, itens e status.
+
+Este projeto é ideal para quem busca entender a integração entre FastAPI, Pydantic, SQLAlchemy e as boas práticas de desenvolvimento assíncrono.
+
+## ⚙️ Tecnologias Utilizadas
+
+* **Framework:** FastAPI
+* **Banco de Dados:** SQLite (padrão) / PostgreSQL (recomendado para produção)
+* **ORM:** SQLAlchemy (Síncrono)
+* **Validação:** Pydantic
+* **Autenticação:** JWT (`python-jose`)
+* **Criptografia:** `passlib` (para senhas)
+* **Ambiente:** `dotenv`
+
+## 🚀 Principais Recursos da API
+
+* **Autenticação JWT (JSON Web Tokens):** Gerenciamento seguro de acesso com *Access* e *Refresh Tokens*.
+* **Gestão de Pedidos:** Endpoints para criação, visualização, adição de itens, cancelamento e finalização de pedidos.
+* **Controle de Acesso (RBAC Simples):** Definição de rotas exclusivas para usuários com privilégios de `admin`.
+* **SQLAlchemy ORM:** Utilização do SQLAlchemy para modelagem de dados e interação.
+* **Pydantic Validation:** Validação rigorosa de dados de entrada e serialização de respostas.
+
+## 💡 Primeiros Passos
+
+### Pré-requisitos
+
+Você precisará ter o Python instalado (versão 3.8+ é recomendada).
+
+### 1. Clonar o Repositório
+
+```bash
+git clone [https://github.com/SEU_USUARIO/fastapi-pizzaria-order-system.git](https://github.com/SEU_USUARIO/fastapi-pizzaria-order-system.git)
+cd fastapi-pizzaria-order-system
