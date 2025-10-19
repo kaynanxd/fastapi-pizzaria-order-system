@@ -49,9 +49,9 @@ DATABASE_URL="sqlite:///banco.db"
 
 ### 4. Crie o banco de dados :
 
-# criar a migração: 
+#### criar a migração: 
 alembic revision --autogenerate -m "migracao inicial"
-# executar a migração: 
+#### executar a migração: 
 alembic upgrade head
 
 ### 5. execute a api :
