@@ -58,3 +58,5 @@ A API estará disponível em http://127.0.0.1:8000
 O FastAPI gera automaticamente uma documentação interativa.
 
 Swagger UI : Acesse http://127.0.0.1:8000/docs
+
+![Swagger Imagem](imagem.png)
