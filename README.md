@@ -41,12 +41,12 @@ pip install -r requirements.txt
 ### 3. crie seu arquivo.env: 
 
 cp .env.example .env
-
+```
 SECRET_KEY="SUA_CHAVE_SECRETA"
 ALGORITHM="HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES=30
 DATABASE_URL="sqlite:///banco.db"
-
+```
 ### 4. Crie o banco de dados :
 
 #### criar a migração: 
